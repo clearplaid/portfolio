@@ -1,2 +1,2 @@
-# portfolio
-Responsive updated portfolio showcasing my web development skills.
+# Portfolio
+Responsive portfolio showcasing my web development skills.
