@@ -1,14 +1,15 @@
 <!doctype <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
- 
-    <title>Portfolio</title>
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+    <title>Portfolio</title>
 </head>
 <body>
   <!-- Hero -->
@@ -87,7 +88,7 @@
                     <figure class="img-overlay">
                         <img src="assets/images/bcCustomerDisplay.PNG" alt="Bamazon" class="border-dark img-thumbnail">
                         <div class="img-hover">
-                            <span class="img-text">View Project</span>
+                            <span class="img-text text-light">View Project</span>
                         </div>
                     </figure>
                 </a>
@@ -115,33 +116,59 @@
     </div>
 
     <!-- Contacts and Links -->
-    <div class="bg-light py-2 mx-5 rounded">
+    <div class="contact py-2 mx-5 rounded">
         <div class="container">
             <div class="row align-items-center justify-content-center">
                 <div class="col-4 col-md-2 py-2 mx-4">
-                    <img src="assets/images/icons8-resume-100-2.png" style="width: 100%; height: auto; border: 0;" alt="Resume logo" class="img-thumbnail">
-                    <a href="https://docs.google.com/document/d/1QBc6h97aAbTypWveIrT3Ska8hUoshekt7-eqWQmRycw/edit?usp=sharing" target="_blank" class="link text-dark">Resume</a>
+                    <a href="#aboutMeModal" role="button" data-toggle="modal" class="text-light">
+                    <img src="assets/images/portrait.jpg" style="width: 100%; height: auto" alt="Resume logo" class="img-thumbnail"></a>
                 </div>
                 <div class="col-4 col-md-2 py-2 mx-4">
-                    <img src="assets/images/Octocat.jpg" style="width: 100%; height: auto; border: 0;" alt="Github logo" class="img-thumbnail">
-                    <a href="https://github.com/clearplaid" target="_blank" class="link text-dark">Github</a>
+                    <a href="https://docs.google.com/document/d/1QBc6h97aAbTypWveIrT3Ska8hUoshekt7-eqWQmRycw/edit?usp=sharing" target="_blank" class="link">
+                    <img src="assets/images/icons8-resume-100-2.png" style="width: 100%; height: auto" alt="Resume logo" class="img-thumbnail"></a>
                 </div>
                 <div class="col-4 col-md-2 py-2 mx-4">
-                    <img src="assets/images/In-Blue-128.png" style="width: 100%; height: auto; border: 0;" alt="LinkedIn logo" class="img-thumbnail">
-                    <a href="https://www.linkedin.com/in/clearplaid/" target="_blank" class="link text-dark ">LinkedIn</a>
+                    <a href="https://github.com/clearplaid" target="_blank" class="link">
+                    <img src="assets/images/Octocat.jpg" style="width: 100%; height: auto" alt="Github logo" class="img-thumbnail"></a>
+                </div>
+                <div class="col-4 col-md-2 py-2 mx-4">
+                    <a href="https://www.linkedin.com/in/clearplaid/" target="_blank" class="link">
+                    <img src="assets/images/In-Blue-128.png" style="width: 100%; height: auto" alt="LinkedIn logo" class="img-thumbnail"></a>
                 </div>
             </div>
         </div>
     </div>
 </main>
 
-
+<div class="modal fade" id="aboutMeModal" tabindex="-1" role="dialog" aria-labelledby="ModalTitle"
+  aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <img id="portrait" class="modal-image" src="assets/images/portrait.jpg" width="100%" height="auto"
+          focusable="false">
+        <br>
+        <h5 id="name" class="modal-title "></h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>Front end developer with an education in people (BS in Psychology). Currently working on a full-stack web development boot camp at the University of Central Florida to prepare technically to bridge my interpersonal skills with my abilities in web development. My strengths include HTML, CSS, and Javascript, while I continue to grow my knowledge in back end development. I have a strong work ethic and collaborate well in teams.</p>
+        <p>I excel at getting people to work towards a goal and strive to create a fun, competitive spirit that challenges each person to accomplish that goal. I enjoy learning new things and am motivated to solve a problem no matter what challenges I face. I look forward to utilizing the knowledge gained in my life from organizing events, hitting top sales, and providing excellent customer service in the technology field. I look forward to applying my knowledge of what people want to create useful web applications.</p>
+      </div>
+      <div class="modal-footer">
+        <button  type="button" class="btn btn-dark" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
 
 
 
   <footer class="position-relative p-1 p-md-2 m-md-2 text-center">
       <p class="small text-secondary">Clearplaid Creations © 2019</p>
-      <p><a href="mailto:clearplaid@gmail.com" class="small text-secondary">Email: clearplaid@gmail.com</a></p>
+      <p class="small text-secondary">Email: clearplaid@gmail.com</p>
       <p class="small text-secondary">Phone: (407) 694-9194</p>
   </footer>
  
