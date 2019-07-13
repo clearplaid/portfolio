@@ -17,11 +17,6 @@ body {
   border-radius: 1rem;
 }
 
-.img-overlay:hover {
-  background-color: #555;
-  
-}
-
 .contact {
   background-color: rgb(79, 82, 85)
 }
